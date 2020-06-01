@@ -1,0 +1,21 @@
+﻿@model IEnumerable<UnityContainerDI.Models.Institution>
+
+@{
+    ViewBag.Title = "GetAllInstitutes";
+}
+
+<h2>GetAllInstitutes</h2>
+
+
+<table class="table">
+  
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+    </tr>
+   
+}
+
+</table>
